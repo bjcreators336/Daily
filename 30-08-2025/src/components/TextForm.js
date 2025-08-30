@@ -10,7 +10,9 @@ export default function TextForm(props) {
     setText("");
   };
   const HandleModifyClick = () => {
-    setText(text.replace(/(^\s*\w|[.!?]\s*\w)/g, (char) => char.toUpperCase()));
+    setText(
+      text.replace(/(^\s*\w|[.!? ]\s*\w)/g, (char) => char.toUpperCase())
+    );
   };
 
   const HandleLoClick = () => {
