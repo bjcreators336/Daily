@@ -1,9 +1,13 @@
 import Buttons from './components/buttons';
+import Text from './components/text'
 import './App.css';
 
 function App() {
   return (
-   <Buttons />
+    <>
+    <Text />
+    <Buttons />
+   </>
   );
 }
 
