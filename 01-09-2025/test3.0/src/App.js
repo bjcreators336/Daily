@@ -10,7 +10,8 @@ function App() {
     if (mode === 'light') {
       setMode('dark');
       setType('Disable Dark Mode');
-      document.body.style.backgroundColor = 'grey';
+      document.body.style.backgroundColor = '#042743';
+      document.body.style.color = 'white';
     } else {
       setMode('light');
       setType('Enable Dark Mode');

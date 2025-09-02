@@ -40,11 +40,11 @@ export default function TextForm(props) {
             className="form-control"
             id="exampleFormControlTextarea1"
             rows="20"
-            placeholder="Enter your text here"
+            placeholder="Enter your text here..."
             value={text}
             onChange={HandleOnChange}
             style={{
-              backgroundColor: props.mode === 'dark' ? '#212529' : '#f1f1f1',
+              backgroundColor: props.mode === 'dark' ? '#495057' : '#f1f1f1',
               color: props.mode === 'dark' ? 'white' : 'black',
               borderColor: props.mode === 'dark' ? '#495057' : '#ced4da'
             }}
@@ -82,7 +82,7 @@ export default function TextForm(props) {
               Minutes to read
             </p>
             <h2>Preview</h2>
-            <p>{text}</p>
+            <p>{text.length>0?text:"Enter some text in text box to preview it here...."}</p>
           </div>
         </div>
       </div>
