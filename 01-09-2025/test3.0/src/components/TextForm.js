@@ -49,7 +49,8 @@ export default function TextForm(props) {
               borderColor: props.mode === 'dark' ? '#495057' : '#ced4da'
             }}
           ></textarea>
-          <button
+          <div className="buttons my-3">
+            <button
             className="btn btn-primary"
             onClick={Analyze}
             onDoubleClick={Analyze2}
@@ -59,15 +60,16 @@ export default function TextForm(props) {
           <button className="btn btn-primary mx-3" onClick={HandleUpClick}>
             Convert To UpperCase
           </button>
-          <button className="btn btn-primary mx-3" onClick={HandleLoClick}>
+          <button className="btn btn-primary " onClick={HandleLoClick}>
             Convert To LowerCase
           </button>
           <button className="btn btn-primary mx-3" onClick={HandleClearClick}>
             Clear Text
           </button>
-          <button className="btn btn-primary mx-3" onClick={HandleModifyClick}>
+          <button className="btn btn-primary " onClick={HandleModifyClick}>
             Modify Text
           </button>
+          </div>
         </div>
         <div className="Inns" style={{ visibility: "hidden" }}>
           <div className="container">
