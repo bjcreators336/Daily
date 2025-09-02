@@ -40,9 +40,14 @@ export default function TextForm(props) {
             className="form-control"
             id="exampleFormControlTextarea1"
             rows="20"
-              placeholder="Enter your text here"
+            placeholder="Enter your text here"
             value={text}
             onChange={HandleOnChange}
+            style={{
+              backgroundColor: props.mode === 'dark' ? '#212529' : '#f1f1f1',
+              color: props.mode === 'dark' ? 'white' : 'black',
+              borderColor: props.mode === 'dark' ? '#495057' : '#ced4da'
+            }}
           ></textarea>
           <button
             className="btn btn-primary"

@@ -1,17 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
-
-
-function App() {
-  return (
+import React, { useState } from 'react'
   
-     <>
-      <Navbar title="Test" aboutText="AboutUS" linkText="Link" />
+function App() {
+  const [mode, setMode] = useState('light'); //whether dark mode is enabled or not
+  const [type, setType] = useState(' Enable Dark Mode');
+  const toggleMode = () => {
+    if (mode === 'light') {
+      setMode('dark');
+      setType('Disable Dark Mode');
+      document.body.style.backgroundColor = 'grey';
+    } else {
+      setMode('light');
+      setType('Enable Dark Mode');
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'black';
+    }
+  };
+  
+  <h1>
+    Enter Text Below to Analyze</h1>
+
+  return (
+    <>
+      <Navbar title="Test" aboutText="AboutUS" mode={mode} linkText="Link" toggleMode={toggleMode} type={type} />
       {/* <About /> */}
       {/* <About /> */}
-      <TextForm />
+      <h1 className='container my-3'>
+      Enter Text Below to Analyze
+    </h1>
+  <TextForm mode={mode}  />
     </>
   );
 }
