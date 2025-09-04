@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="forms">
+      <!-- Sign In Form -->
+  <form class="sign-in-form active" id="sign-in-form" method="POST" action="/login">
+        <h2>Sign In</h2>
+        <div class="input-field">
+          <input type="text" id="signInUserId" name="userId" placeholder="User ID" required>
+        </div>
+        <div class="input-field">
+          <input type="email" id="signInEmail" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signInPassword" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Sign In</button>
+        <p class="switch">Don’t have an account? <a href="#" id="show-sign-up">Sign Up</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form class="sign-up-form" id="sign-up-form" method="POST" action="/register">
+        <h2>Create Account</h2>
+        <div class="input-field">
+          <input type="text" id="signUpUserId" name="userId" placeholder="User ID" required>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signUpUsername" name="name" placeholder="Username" required>
+        </div>
+        <div class="input-field">
+          <input type="email" id="signUpEmail" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signUpPassword" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p class="switch">Already have an account? <a href="#" id="show-sign-in">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
