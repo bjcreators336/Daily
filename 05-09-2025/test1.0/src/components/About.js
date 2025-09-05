@@ -7,23 +7,32 @@ export default function About() {
   const handlemode = ()=>{
     if (mode === "light") {
       setmode("dark");
-      document.body.style.backgroundColor = '#222';
-      document.body.style.color = '#fff';
-    } else {
+      document.querySelectorAll('.paragraph').forEach(body => {
+        if (body) {
+          body.style.backgroundColor = '#222';
+          body.style.color = '#fff';
+        }
+      });
+    } else if (mode === "dark") {
       setmode("light");
-      document.body.style.backgroundColor = '#fff';
-      document.body.style.color = '#222';
+      document.querySelectorAll('.paragraph').forEach(body => {
+        if (body) {
+          body.style.backgroundColor = '#fff';
+          body.style.color = '#222';
+        }
+      });
     }
   }
 
   return (
     // <div>About</div>
     <>
-      <div className="accordion" id="accordionExample">
-        <div className="accordion-item">
+    <h2 className="container my-3">About Us</h2>
+      <div className="accordion container" id="accordionExample">
+        <div className="accordion-item paragraph">
           <h2 className="accordion-header">
             <button
-              className="accordion-button"
+              className="accordion-button paragraph"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -50,10 +59,10 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="accordion-item">
+        <div className="accordion-item paragraph">
           <h2 className="accordion-header">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed paragraph"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
@@ -80,10 +89,10 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="accordion-item">
+        <div className="accordion-item paragraph">
           <h2 className="accordion-header">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed paragraph"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
@@ -111,7 +120,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <button className="btn btn-primary my-3 mx-3" onClick={handlemode}>Toggle Mode</button>
+      <button className="btn btn-primary my-3" style={{ marginLeft: 150 }} onClick={handlemode}>Toggle Mode</button>
     </>
   );
 }
