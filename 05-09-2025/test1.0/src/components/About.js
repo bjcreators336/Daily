@@ -1,6 +1,21 @@
-// import React from "react";
+import React , {useState} from "react";
 
 export default function About() {
+ 
+
+  const [mode, setmode] = useState("light")
+  const handlemode = ()=>{
+    if (mode === "light") {
+      setmode("dark");
+      document.body.style.backgroundColor = '#222';
+      document.body.style.color = '#fff';
+    } else {
+      setmode("light");
+      document.body.style.backgroundColor = '#fff';
+      document.body.style.color = '#222';
+    }
+  }
+
   return (
     // <div>About</div>
     <>
@@ -96,6 +111,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <button className="btn btn-primary my-3 mx-3" onClick={handlemode}>Toggle Mode</button>
     </>
   );
 }

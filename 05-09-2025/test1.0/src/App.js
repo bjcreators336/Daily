@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar'
+import About from './components/About'
 import TextForm from './components/TextForm'
 import React, { useState } from 'react'
   
@@ -26,12 +27,12 @@ function App() {
   return (
     <>
       <Navbar title="Test" aboutText="AboutUS" mode={mode} linkText="Link" toggleMode={toggleMode} type={type} />
-      {/* <About /> */}
-      {/* <About /> */}
-      <h1 className='container my-3'>
+           {/* <h1 className='container my-3'>
       Enter Text Below to Analyze
     </h1>
-  <TextForm mode={mode}  />
+  <TextForm mode={mode}  /> */}
+  <About mode={mode} />
+  
     </>
   );
 }
