@@ -1,14 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import About from './components/About'
+// import About from './co  mponents/About'
 import TextForm from './components/TextForm'
 import React, { useState } from 'react'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 
 function App() {
@@ -33,7 +28,6 @@ function App() {
 
   return (
     <>
-      <Router>
         <Navbar title="Test" aboutText="AboutUS" mode={mode} linkText="Link" toggleMode={toggleMode} type={type} />
               <h1 className='container my-3'>Enter Text Below to Analyze</h1>
               <TextForm mode={mode} />
