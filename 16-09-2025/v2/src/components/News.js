@@ -46,6 +46,7 @@ export class News extends Component {
     }&pageSize=20`;
     let data = await fetch(url);
     let parsedData = await data.json();
+    console.log(parsedData);
     this.setState({
       articles: parsedData.articles,
       totalArticles: parsedData.totalResults,
@@ -88,7 +89,13 @@ export class News extends Component {
           >
             &larr; Load Previous
           </button>
-          <button className="btn btn-dark  mb-3" onClick={this.handleNextClick}>
+          <button
+            disabled={
+              this.state.page >= Math.ceil(this.state.totalArticles / 20)
+            }
+            className="btn btn-dark  mb-3"
+            onClick={this.handleNextClick}
+          >
             Load More &rarr;
           </button>
         </div>
