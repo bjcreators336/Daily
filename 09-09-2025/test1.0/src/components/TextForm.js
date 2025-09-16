@@ -78,7 +78,7 @@ export default function TextForm(props) {
               Text contains <b>{text.split(" ").filter((element)=>{return element.length!==0}).length}</b> Words and{" "}
               <b>{text.length} </b>
               Letters <br /> An average of{" "}
-              <b>{0.008 * (text.split(" ").filter((element)=>{return element.length!==0}).length)} </b>
+              <b>{0.008 * (text.split(/\s+/).filter((element)=>{return element.length!==0}).length)} </b>
               Minutes to read
             </p>
             <h2>Preview</h2>
