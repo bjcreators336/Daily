@@ -1,0 +1,251 @@
+/* Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 380px;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.forms form {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.forms form.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #667eea;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5a67d8;
+}
+
+.switch {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.switch a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+Animation
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Responsive */
+/* @media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}    */
+/* Additional Styles */
+/* .input-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+.input-field input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+.input-field .checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+.input-field .checkbox-label input {
+  margin-right: 0.5rem;
+}
+.input-field .checkbox-label a {
+  color: #667eea;
+  text-decoration: none;
+}
+.input-field .checkbox-label a:hover {
+  text-decoration: underline;
+}
+.input-field .checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+.input-field .checkbox-label input {
+  margin-right: 0.5rem;
+}
+.input-field .checkbox-label a {
+  color: #667eea;
+  text-decoration: none;
+}
+.input-field .checkbox-label a:hover {
+  text-decoration: underline;
+}
+.input-field .checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+.input-field .checkbox-label input {
+  margin-right: 0.5rem;
+}  */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 380px;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.forms form {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.forms form.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #667eea;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5a67d8;
+}
+
+.switch {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.switch a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
